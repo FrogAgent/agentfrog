@@ -1,4 +1,4 @@
-# Agentfrog
+# AgentFrog
 
 Welcome to AgentFrog — an indie game studio!
 
