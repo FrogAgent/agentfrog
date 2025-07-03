@@ -1,6 +1,6 @@
 # AgentFrog
 
-Welcome to AgentFrog — an indie game studio!
+Welcome to AgentFrog — a solo indie game studio!
 
 🎮 Visit the live site here:  
 👉 [https://frogagent.github.io/agentfrog/](https://frogagent.github.io/agentfrog/)
