@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Frog Games</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* ===== HEADER (PC CENTERED) ===== */
+    header {
+      background-color: #1f1f1f;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* CENTER CONTENT */
+      gap: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      height: 80px;
+      flex-shrink: 0;
+    }
+
+    .title-area {
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #4af626;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 0;
+      color: #ccc;
+      font-size: 1em;
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      background-color: #141414;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #4af626;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== CONTENT ===== */
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #333;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4af626;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+
+    /* ===== MOBILE FIX ===== */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      .logo {
+        height: 60px;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+
+      nav a {
+        margin: 6px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- CACHE BUSTER FOR GITHUB PAGES -->
+    <img src="logo.png?v=2" alt="AgentFrog Logo" class="logo" />
+    <div class="title-area">
+      <h1>Agent Frog</h1>
+      <p>Innovative Games for Sharp Minds</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#memoflip">Memoflip</a>
+    <a href="#football">Football Player ID</a>
+    <a href="#basketball">Basketball Player ID</a>
+    <a href="#f1">Formula 1 Driver ID</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section id="memoflip">
+    <h2>🧠 Memoflip</h2>
+    <p>
+      A memory-flipping challenge to test your brain with letters, symbols, and
+      patterns. Perfect for training your attention and recall.
+    </p>
+  </section>
+
+  <section id="football">
+    <h2>⚽ Football Player ID</h2>
+    <p>
+      Can you guess the football player based on clues? A trivia game for hardcore
+      football fans around the world.
+    </p>
+  </section>
+
+  <section id="basketball">
+    <h2>🏀 Basketball Player ID</h2>
+    <p>
+      Identify basketball legends and rising stars using hints and stats. Built
+      for true hoop fans.
+    </p>
+  </section>
+
+  <section id="f1">
+    <h2>🏎️ Formula 1 Driver ID</h2>
+    <p>
+      Fast-paced quiz game that challenges you to recognize F1 drivers by details,
+      stats, and photos.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Agent Frog</h2>
+    <p>
+      Agent Frog is a small indie game studio focused on creating smart, fun, and
+      interactive games that challenge your mind and spark curiosity.
+      <br><br>
+      More games coming soon!
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Agent Frog. All rights reserved.
+  </footer>
+
+</body>
+</html>
