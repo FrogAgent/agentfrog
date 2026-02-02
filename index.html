@@ -21,19 +21,20 @@
       to { opacity: 1; }
     }
 
-    /* ===== HEADER (PC CENTERED) ===== */
+    /* ===== HEADER ===== */
     header {
       background-color: #1f1f1f;
       padding: 20px 40px;
       display: flex;
+      flex-direction: column; /* Logo πάνω, κείμενα κάτω */
       align-items: center;
-      justify-content: center; /* CENTER CONTENT */
-      gap: 20px;
+      justify-content: center;
+      gap: 10px;
       text-align: center;
     }
 
     .logo {
-      height: 80px;
+      height: 200px;
       flex-shrink: 0;
     }
 
@@ -81,10 +82,16 @@
       border-bottom: 1px solid #333;
       max-width: 900px;
       margin: auto;
+      text-align: center; /* Κεντράρισμα περιγραφών */
     }
 
     h2 {
       color: #4af626;
+      text-align: center; /* Κεντράρισμα τίτλων */
+    }
+
+    p {
+      text-align: center; /* Κεντράρισμα περιγραφών */
     }
 
     footer {
@@ -97,7 +104,6 @@
     /* ===== MOBILE FIX ===== */
     @media (max-width: 600px) {
       header {
-        flex-direction: column;
         padding: 15px;
       }
 
@@ -121,7 +127,6 @@
 <body>
 
   <header>
-    <!-- CACHE BUSTER FOR GITHUB PAGES -->
     <img src="logo.png" alt="AgentFrog Logo" class="logo" />
     <div class="title-area">
       <h1>Agent Frog</h1>
@@ -130,20 +135,11 @@
   </header>
 
   <nav>
-    <a href="#memoflip">Memoflip</a>
     <a href="#football">Football Player ID</a>
     <a href="#basketball">Basketball Player ID</a>
     <a href="#f1">Formula 1 Driver ID</a>
     <a href="#about">About</a>
   </nav>
-
-  <section id="memoflip">
-    <h2>🧠 Memoflip</h2>
-    <p>
-      A memory-flipping challenge to test your brain with letters, symbols, and
-      patterns. Perfect for training your attention and recall.
-    </p>
-  </section>
 
   <section id="football">
     <h2>⚽ Football Player ID</h2>
@@ -180,7 +176,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Agent Frog. All rights reserved.
+    &copy; 2026 Agent Frog. All rights reserved.
   </footer>
 
 </body>
