@@ -1,2 +1,8 @@
-# AgentFrog
-Game site for my solo video game company, Agent Frog
+# Agent Frog
+
+Welcome to Agent Frog - a solo indie game studio!
+
+Visit the live site here:  
+👉 [https://frogagent.github.io/agentfrog/](https://frogagent.github.io/agentfrog/)
+
+This site showcases my video games and projects.
