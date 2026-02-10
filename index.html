@@ -26,15 +26,18 @@
       background-color: #1f1f1f;
       padding: 20px 40px;
       display: flex;
-      flex-direction: column; /* Logo πάνω, κείμενα κάτω */
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       text-align: center;
     }
 
+    /* LOGO – ΙΔΙΟ ΜΕΓΑΘΟΣ DESKTOP & MOBILE */
     .logo {
       height: 200px;
+      max-width: 90vw;
+      object-fit: contain;
       flex-shrink: 0;
     }
 
@@ -58,10 +61,10 @@
     nav {
       background-color: #141414;
       padding: 10px;
-      text-align: center;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      text-align: center;
     }
 
     nav a {
@@ -82,16 +85,16 @@
       border-bottom: 1px solid #333;
       max-width: 900px;
       margin: auto;
-      text-align: center; /* Κεντράρισμα περιγραφών */
+      text-align: center;
     }
 
     h2 {
       color: #4af626;
-      text-align: center; /* Κεντράρισμα τίτλων */
+      text-align: center;
     }
 
     p {
-      text-align: center; /* Κεντράρισμα περιγραφών */
+      text-align: center;
     }
 
     footer {
@@ -101,15 +104,15 @@
       color: #777;
     }
 
-    /* ===== MOBILE FIX ===== */
+    /* ===== MOBILE ===== */
     @media (max-width: 600px) {
       header {
         padding: 15px;
       }
 
+      /* ΔΕΝ μικραίνουμε το logo */
       .logo {
-        height: 60px;
-        margin-bottom: 10px;
+        height: 200px;
       }
 
       nav {
@@ -129,7 +132,7 @@
   <header>
     <img src="logo.png" alt="AgentFrog Logo" class="logo" />
     <div class="title-area">
-      <h1>Agent Frog</h1>
+      <h1>Agent Frog Games</h1>
       <p>Innovative Games for Sharp Minds</p>
     </div>
   </header>
@@ -166,7 +169,7 @@
   </section>
 
   <section id="about">
-    <h2>About Agent Frog</h2>
+    <h2>About Agent Frog Games</h2>
     <p>
       Agent Frog is a small indie game studio focused on creating smart, fun, and
       interactive games that challenge your mind and spark curiosity.
@@ -176,7 +179,7 @@
   </section>
 
   <footer>
-    &copy; 2026 Agent Frog. All rights reserved.
+    &copy; 2026 Agent Frog Games. All rights reserved.
   </footer>
 
 </body>
